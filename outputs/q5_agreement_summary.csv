@@ -1,0 +1,5 @@
+comparison,n,matches,accuracy,cohens_kappa,disagreements,note
+raw_case_sensitive,100,0,0.0000,0.0000,100,No exact matches; Wrong Item vs Wrong item is a case difference.
+raw_case_insensitive,100,8,0.0800,0.0649,92,Only Wrong Item/Wrong item overlaps; not a valid measure of model accuracy because the label sets differ.
+mapped_crosswalk,100,80,0.8000,0.7335,20,In-memory crosswalk; source labels unchanged. Out of Stock/Cancelled mapped to Seller or customer service.
+mapped_crosswalk_alt_stock_other,100,72,0.7200,0.6305,28,Sensitivity only: Out of Stock/Cancelled mapped to Other.

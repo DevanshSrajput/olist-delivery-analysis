@@ -1,0 +1,108 @@
+review_id,comment,human_label,human_label_normalized,model_label,model_label_normalized,model_confidence
+00b4ff93b872060dc0915bbaac9466e7,"Dessa vez a culpa foi dos correios,ele se atrasaram deve ser a tal greve deles",Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+01599963b3308e80154e13bf8639aaaf,"Além de chegar no último dia, venho quebrado.",Defective / Broken,defective / broken,Damaged or defective,damaged or defective,1.00
+017c2b5a9152db1baac14d2c33b934e8,"A entrega não foi feita no prazo, não deram nenhuma satisfação.",Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+023a45d2faebd9553e1a8387c4221e3a,O produto ainda não chegou,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+0cbc9687d5e2ba8faa9884a7f9bce407,"comprei o produto ja tem quase 1 mês, o prazo era dia 24 agora e ate agora o status e apenas de confirmação de pagamento. aguardo contato",Delivery Issue / Not Received,delivery issue / not received,Seller or customer service,seller or customer service,1.00
+0eb8fd67c98a9b0e14316f4396e86b57,Fiz a compra e meu pedido não chegou e dar como entregue!!!,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+0fc8d70eb24bbbf348a9ac736fc7329f,Apresentaram um produto que não tinham no estoque ,Out of Stock / Cancelled,out of stock / cancelled,Seller or customer service,seller or customer service,1.00
+1057b5e89116992789c31ad775bc2063,"Ainda dentro do prazo q me foi dado.
+No aguardo ",Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+1251980336177d66fa0036dd6319d805,"foi entregue no prazo correto site seguro, porem veio quebrado. espero que a loja troque ou devolva o dinheiro estou esperando uma devolutiva. ",Defective / Broken,defective / broken,Damaged or defective,damaged or defective,1.00
+1309e136a41c9f8d07407d21c32c42f7,Recebemos apenas uma luminária e o pedido era duas. Estamos aguardando resposta da loja. ,Missing Item,missing item,Wrong item,wrong item,1.00
+143f2593520fb22ddb965c6ee4238b2f,"Comprei uma Bike já faz 40 dias e ainda não chegou, vou processar essa empresa.",Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+1a7b7992cd3a8c0b55becb9cafbf5244,Não recebi o produto,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+21aa5eb112ed0b3921da424a813b45cd,Comprei mei produto dia 28 e até hoje nao foi entregue ,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+268eb5c58f1fa85472f94c2f295c2a91,Eu recebi um produto! E como descrito na nota eu paguei por 2 produtos ,Missing Item,missing item,Wrong item,wrong item,1.00
+27e23e9a4217bbbf2e98610d19b2ea59,O produto comprado não tem a mesma qualidade de outros perfumes da mesma marca que comprei anteriormente.,Poor Quality / Fake,poor quality / fake,Poor quality or not as described,poor quality or not as described,1.00
+282b39000a7e0fc8985b455fd576e8f3,Ja paguei a 1° parcela e ainda não chegou,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+2893f7f537bc5056b7bbb42a742d56ad,NÃO ENTRA EM CONTATO PARA SOLUCIONAR O ESTORNO DA COMPRA,Out of Stock / Cancelled,out of stock / cancelled,Seller or customer service,seller or customer service,1.00
+32415bbf6e341d5d517080a796f79b5c,O produto veio com defeito! Espero que não demore muito a troca pois foi comprada para presentear!,Defective / Broken,defective / broken,Damaged or defective,damaged or defective,1.00
+356159cb6a1003f8eb167f52df6ca3df,"Até hoje não recebi a mercadoria , e quando entro para rastrear a entrega os dados não são atualizados, em resumo não consigo saber nada sobre a entrega.",Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+36ad6edf206cc33e3c28717f38bae8d9,Não recebi o produto ainda. Muito atraso ! Nunca passei por isto em nenhuma loja. Muito insatisfeito com o serviço.,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+3a23d95341f3fba557e26ed73a67e591,"Carregador e fone muito frágeis, não prece original.",Poor Quality / Fake,poor quality / fake,Poor quality or not as described,poor quality or not as described,1.00
+3c394a842b439b55b24d5451a7be8fb7,Era para ser entregue dia 9/03 e ate o momento nao chegou ainda o meu pedido.,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+48c36c3ff4d8e71840e4723b966e950d,"Infelizmente não recebi o produto, comprei com antecedência para não correr o risco de não chegar no prazo mais infelizmente deu tudo errado, minha festa ficou incompleta....😢😢😢",Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+4a0303ff918d8f421624b4eb92747d59,Continuo aguardando,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+4a93de6c66dee67442f7cbd44428f399,"Parceiro ruim e metodologia da lannister péssimo. Já tem quase um mês que recebi o produto errado, tive de comprar novamente e as Lojas lannister não tomam nenhuma atitude, só ficam enviando pesquis",Customer Service Issue,customer service issue,Wrong item,wrong item,1.00
+4d0f5135f9a2024943166671431bd897,"Péssimo atendimento! Comprei o produto no início de janeiro e somente ontem 01/03, me avisaram que não tinham para entregar, pois o fornecedor vendeu o que não tinha. Não compro mais nada neste site",Out of Stock / Cancelled,out of stock / cancelled,Seller or customer service,seller or customer service,1.00
+503d020872f0627f66c4f2f569901fdf,"a loja tem que abrir a embalagem do produto antes de enviar,e isso nao foi feito,a saia do colchao chegou esfarelada desmanchando.",Defective / Broken,defective / broken,Damaged or defective,damaged or defective,1.00
+50da8a71aa1f1ce5c4ed0f722b4ab127,Parece não ser original e o cheiro é insuportável!,Poor Quality / Fake,poor quality / fake,Poor quality or not as described,poor quality or not as described,1.00
+55fc62de8aa360d55668514d8eff4c82,Faltou peças e muito mau explicado a montagem e muito difícil de entender!,Missing Item,missing item,Wrong item,wrong item,1.00
+56ec62aba6849a51e8d44f7e452913c1,"Estou com a promessa de ser enviado hoje 17/03 mas não acredito que vá! Lamentável o stark colocar sua marca numa enrolação dessa.
+
+Nem a nota fiscal recebi ainda!",Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+59d708a41fdd3162033abd5c3aaaec2e,"Não solicitei cancelamento de pedido, queriam entregar o produto nos correios, mas paguei frete para receber em casa. Recebi vários email que não correspondem à verdade dos fatos.",Customer Service Issue,customer service issue,Seller or customer service,seller or customer service,1.00
+5aeb9c65a2e55918e68edda591c25f08,"o produto veio com a caixa do mp3 quebrada e sem a parte da caixa que estava quebrada , e com um grande defeito na bateria.
+",Defective / Broken,defective / broken,Damaged or defective,damaged or defective,1.00
+5c4c2e163fd528182219685c2c0f30bd,Não recebi a fronha de travesseiro de corpo,Missing Item,missing item,Late or never arrived,late or never arrived,1.00
+607957a0a16be63148e7e51fc2b7c1a5,Poderia ter sido melhor se a entrega fosse em minha residência... Pois tive que enfrentar uma tremenda fila para retirar nos correios!,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+61f67307388ef5bec99937ea44c26229,"Eu recomedaria a lannister diversas vezes, mas nao por este produto. Infelizmente ele veio amassado e com pequenos defeitos ao longo do produto. ",Defective / Broken,defective / broken,Damaged or defective,damaged or defective,1.00
+6217fb5bbfd21073a74bce0d81e7e47b,"Foi comprado 2 unidades e só veio uma, mandei 4 email pro vendedor e até agora sem resposta",Missing Item,missing item,Wrong item,wrong item,1.00
+63272ba8a58647be696ae623e380f811,Nunca mais vou comprar pelas lojas lannister ,Customer Service Issue,customer service issue,Other,other,1.00
+635ca59a826c4a3009355d2f402c093e,O produto não era bem o que eu esperava. Nas fotos parecia ser maior. Sem contar que caiu um detalhe da testeira do cabideiro na hora que tirei da caixa. Realmente o produto não vale o que custou.,Poor Quality / Fake,poor quality / fake,Poor quality or not as described,poor quality or not as described,1.00
+63a92248aeef614bdd06f73933f89532,Comprei dois intes e só chegou um,Missing Item,missing item,Wrong item,wrong item,1.00
+65eb064fb4bbf0196b283cab01947ced,Até o presente momento não recebi a cortina adquirida. Nelma Costa,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+67f2c4c201ff644210e242d95b981874,"Informado que o produto chegaria até dia 19/04, sendo que foi comprado no início de abril. Já é dia 23/04 e nada do meu produto chegar...",Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+695c1a73e78b81b3ac7cc6064c5a0e85,"Eu cancelei a compra, estou esperando a devolução do valor conforme o e-mail recebido.",Out of Stock / Cancelled,out of stock / cancelled,Seller or customer service,seller or customer service,1.00
+6bad2ba7fbe21010d6e0bb0fbd24729c,"Estou aguardando meu produto chegar está em atraso! 
+Mas já recebi outro produto antes queria saber porque esse não chegou? ",Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+6c4951ae9476da1a3c55ade89c8384aa,Produto incompleto,Missing Item,missing item,Wrong item,wrong item,1.00
+6f8f95f14128b25cc60c07d46f0946e6,Ainda não recebi o produto. ,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+748bceb2d47f389666460f7ddab1977a,"não recebi o produto, horrível o atendimento!",Delivery Issue / Not Received,delivery issue / not received,Seller or customer service,seller or customer service,1.00
+7528a396f7625967f05cb09946286608,Ultimamente estão atrasando muito as entregas,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+7aa2d4e5d17fea931b9e7f62ebd59ad6,O PRODUTO AINDA NÃO FOI ENTREGUE NO PRAZO. O QUE EU FAÇO???,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+7c1160e1d9f6f68551d795eee8983229,"Não veio o principal que é o celular!! S7 EDGE que eu comprei junto!! Onde foi parar?? Não recebi até agora!! só recebi a capa carteira e a película.
+
+Salete Siloti",Missing Item,missing item,Late or never arrived,late or never arrived,1.00
+7eabad6a9f68bc736952667adfb09236,"Considero como alegação infundada informando que o produto estava esgotado. Na época a quantidade anunciada foi de 2(dois), apenas dois produtos. ",Out of Stock / Cancelled,out of stock / cancelled,Seller or customer service,seller or customer service,1.00
+83d1149212ad8b79fc39230d088ef2dd,falta ser entregue uma cadeira,Missing Item,missing item,Late or never arrived,late or never arrived,1.00
+8491feec182f0f1e300691948ca286aa,A cor e diferente de como está na foto,Wrong Item,wrong item,Poor quality or not as described,poor quality or not as described,1.00
+8757f5e0a1f891b890039b0d95c321c8,"Fiquei muito chateada pois deixei de comprar de outro vendedor e depois de muitos dias recebi um email informando que o produto não poderia ser entregue, comprar e não receber é muito chato. ",Out of Stock / Cancelled,out of stock / cancelled,Seller or customer service,seller or customer service,1.00
+89f0c59032521fe156f09d7dbd859988,"Até no momento ninguém entrou em contato sobre o produto, não consigo rastrear o mesmo!",Delivery Issue / Not Received,delivery issue / not received,Seller or customer service,seller or customer service,1.00
+8c03437c554fc22b4a05bee22ac7c335,"Recebi o produto porém não é original,e como é um produto pra ingerir não quero colocar a minha saúde em risco. ",Poor Quality / Fake,poor quality / fake,Poor quality or not as described,poor quality or not as described,1.00
+8e13d2fc070d5b5cab85f58e307d59d6,"Comprei 2 itens do mesmo produto e tive que pagar 2 fretes... Acho uma sacanagem isso, e também chegou 1 produto e o outro ainda não",Missing Item,missing item,Late or never arrived,late or never arrived,0.80
+8edd42a7c561e11de943594bfae347e5,"Realizei a compra de 2 colchas de solteiro e só recebi 1 produto.
+E até agora não recebi a outra colcha.",Missing Item,missing item,Late or never arrived,late or never arrived,1.00
+8f2891112d4c9912ac3ace23879cc8f3,"obrigado, pelo produto",Positive Feedback,positive feedback,Other,other,1.00
+9200f98755ed7d61ef97fd2460d5a329,"Fiz o pedido de 02 cortinas, porém recebi somente 01 unidade. A nota fiscal também não veio correta, consta quantidade 03 unidades e valor incorreto.",Missing Item,missing item,Wrong item,wrong item,1.00
+928704b71562eb57e79593b7e9e04be1,"Produto veio com bolhas e uns cabelos ou pelos pretos, enfim quero devolver e preciso do código para postagem.",Defective / Broken,defective / broken,Damaged or defective,damaged or defective,1.00
+92e49e5d5ea4a8aa76c10fcf0fd90350,O produto não chegou,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+94bda7683b54d70b2d987a19d726f567,Apresentou manchas de utilização no produto.,Defective / Broken,defective / broken,Poor quality or not as described,poor quality or not as described,1.00
+982645839578b50e2484535f7b56bf10,"produto inferior ao esperado.
+Desejo devolve lo. ",Poor Quality / Fake,poor quality / fake,Poor quality or not as described,poor quality or not as described,1.00
+9b27ecb1f3f5cd5f982f4b03f383e301,Ainda esta no prazo para entrega,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+a6aa6832e27f9328ad3730cf54e494d0,"Gostaria de saber o motivo do NÃO recebimento do produto, visto que fiz uma compra com 4 (quatro) produtos, sendo que três recebi e o controle NÃO.",Missing Item,missing item,Late or never arrived,late or never arrived,1.00
+aa6b0ed6f801a5b9fd639145df5037a1,Esperava um material melhor .Nao gostei .devolveria .Esperava um lustre de qualidade nao indico ,Poor Quality / Fake,poor quality / fake,Poor quality or not as described,poor quality or not as described,1.00
+ae288856fb6a1de8445f3e1ccf5f7bfd,"Eu cancelei este pedido, não tem como avaliar.",Out of Stock / Cancelled,out of stock / cancelled,Seller or customer service,seller or customer service,1.00
+ae38891982e2ff44f5efbec023a80c9a,Quero meu produto ou meu dinheiro de volta,Delivery Issue / Not Received,delivery issue / not received,Seller or customer service,seller or customer service,1.00
+b1311ded9a365b87ecef3b95511db5bf,O material da mochila ficou a desejar.,Poor Quality / Fake,poor quality / fake,Poor quality or not as described,poor quality or not as described,1.00
+b81386f4a1a025189712a50380b6d92f,mas esta demorando muito desta vez.,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+b92b5b1122f1298b87bc7882115db417,Não foram entregue as duas capas de couro compradas. Apenas uma delas. Aguardo a devolução do dinheiro ou a entrega da segunda capa.,Missing Item,missing item,Late or never arrived,late or never arrived,1.00
+bb5b1ef06150469f9b62501946b29711,"Esperei semanas para o produto chegar e quando o prazo da entrega acabou, recebi um email dizendo que teve problema com a entrega.",Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+bd8bd4c7580ab07659b35e684bad3179,Até hoje não recebi minha mercadoria.,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+c457671db563d67545327c684ff5c528,"Bom dia!
+
+Ao abrir a caixa, verifiquei que o pedido Brinco De Gancho Pendurado Chapeado De Prata Cristal Orelha Prata 5 estava faltando e estava sendo especificado na nota fiscal.",Missing Item,missing item,Wrong item,wrong item,1.00
+c614b7811fd180dc4ba3c3e3cb804c45,"produto nao funciona,, nao consegui entrar conta por telefone da empresa que me vendeu, fala telefone nao existente. estragou minha impressora o produto q foi me vendido.",Defective / Broken,defective / broken,Damaged or defective,damaged or defective,1.00
+c9a369ece58998f19bed1ee70db6297b,Nota zero. Pedimos 3 unidades veio apenas 1 unidade,Missing Item,missing item,Wrong item,wrong item,1.00
+cc9495ea6d742d39d084ee6d08c00e1d,quando liguei pra loja pra saber o porque meu produto ainda não tinha chegado o atendente foi muito grosso,Customer Service Issue,customer service issue,Seller or customer service,seller or customer service,1.00
+d3f6a183fd58d4afd1b44a1bb410d7c2,"bom dia ainda não recebi toa a minha encomenda, pos fiz o pedido de 12 relógios de parede ate agora so chgaram 6",Missing Item,missing item,Late or never arrived,late or never arrived,1.00
+d46e3bfa6f26307347c4bc1347761529,Não recebi o produto ,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+d488e99d217422de7a7d861bc1baad6d,bom,Positive Feedback,positive feedback,Other,other,1.00
+d73b22a613792f24e5089d77fad1d653,"o produto veio com manchas na pintura da parte de dentro e mal acabado na pintura nas bordas, como se estivesse por descascar.",Defective / Broken,defective / broken,Poor quality or not as described,poor quality or not as described,1.00
+d75e8976ac990fb98c50df9121814400,"Após aguardar mais de 1 mês da data do pagamento, o pedido foi cancelado pelo sistema. Fiz uma reclamação no site e até agora não recebi resposta. Uma falta de respeito e desonestidade. ",Out of Stock / Cancelled,out of stock / cancelled,Seller or customer service,seller or customer service,1.00
+e55a3be1e1c813ddb7fdc1c0739a0a57,"Entrega no tempo previsto.
+Gostei muito,são bem feito.",Positive Feedback,positive feedback,Other,other,1.00
+ec4287226cc7cd25a479a4f1d44cff42,"Pessimo o produto de má qualidade, tecido horrivel, não é igual a foto.
+\não recomendo esse produto",Poor Quality / Fake,poor quality / fake,Poor quality or not as described,poor quality or not as described,1.00
+f117a73a43ff183f1f7e21143de5582e,Eu quero meu produto,Delivery Issue / Not Received,delivery issue / not received,Other,other,1.00
+f2621e379dea4fd993a35a69fbbc8a72,"Nem uma satisfação ou justificativa do porque da demora, ainda sem receber o produto.
+já é a terceira vez que tento comprar o mesmo produto e não recebo.",Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+f48e5a79caba6c9eb1069f13c597b5d7,Não entregaram e não entraram em contato comigo para dar uma satisfação.,Delivery Issue / Not Received,delivery issue / not received,Seller or customer service,seller or customer service,1.00
+f566bcdc5aef5f9cdd18b8f6cd107204,Estou esperando o produto,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+f7e0c5eed646de56152c17868ffc8ab5,"Comprei o produto,paguei o frete e não foi entregue em casa. Tive que ir buscar.
+Péssimo.",Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+f999590dce9ff69d26d6195ae3bac5fe,quero meu produto,Delivery Issue / Not Received,delivery issue / not received,Other,other,1.00
+fb273933480c85e5897cea81904ce534,sem opinião produto não entregue,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00
+fc9bad472c4da95d66a49821ac324913,Não me enviaram o meu pneu ainda ,Delivery Issue / Not Received,delivery issue / not received,Late or never arrived,late or never arrived,1.00

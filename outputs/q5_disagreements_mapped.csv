@@ -1,0 +1,24 @@
+review_id,comment,human_label,human_label_mapped,model_label,model_confidence
+94bda7683b54d70b2d987a19d726f567,Apresentou manchas de utilização no produto.,Defective / Broken,Damaged or defective,Poor quality or not as described,1.00
+d73b22a613792f24e5089d77fad1d653,"o produto veio com manchas na pintura da parte de dentro e mal acabado na pintura nas bordas, como se estivesse por descascar.",Defective / Broken,Damaged or defective,Poor quality or not as described,1.00
+f117a73a43ff183f1f7e21143de5582e,Eu quero meu produto,Delivery Issue / Not Received,Late or never arrived,Other,1.00
+f999590dce9ff69d26d6195ae3bac5fe,quero meu produto,Delivery Issue / Not Received,Late or never arrived,Other,1.00
+0cbc9687d5e2ba8faa9884a7f9bce407,"comprei o produto ja tem quase 1 mês, o prazo era dia 24 agora e ate agora o status e apenas de confirmação de pagamento. aguardo contato",Delivery Issue / Not Received,Late or never arrived,Seller or customer service,1.00
+748bceb2d47f389666460f7ddab1977a,"não recebi o produto, horrível o atendimento!",Delivery Issue / Not Received,Late or never arrived,Seller or customer service,1.00
+89f0c59032521fe156f09d7dbd859988,"Até no momento ninguém entrou em contato sobre o produto, não consigo rastrear o mesmo!",Delivery Issue / Not Received,Late or never arrived,Seller or customer service,1.00
+ae38891982e2ff44f5efbec023a80c9a,Quero meu produto ou meu dinheiro de volta,Delivery Issue / Not Received,Late or never arrived,Seller or customer service,1.00
+f48e5a79caba6c9eb1069f13c597b5d7,Não entregaram e não entraram em contato comigo para dar uma satisfação.,Delivery Issue / Not Received,Late or never arrived,Seller or customer service,1.00
+63272ba8a58647be696ae623e380f811,Nunca mais vou comprar pelas lojas lannister ,Customer Service Issue,Seller or customer service,Other,1.00
+4a93de6c66dee67442f7cbd44428f399,"Parceiro ruim e metodologia da lannister péssimo. Já tem quase um mês que recebi o produto errado, tive de comprar novamente e as Lojas lannister não tomam nenhuma atitude, só ficam enviando pesquis",Customer Service Issue,Seller or customer service,Wrong item,1.00
+5c4c2e163fd528182219685c2c0f30bd,Não recebi a fronha de travesseiro de corpo,Missing Item,Wrong item,Late or never arrived,1.00
+7c1160e1d9f6f68551d795eee8983229,"Não veio o principal que é o celular!! S7 EDGE que eu comprei junto!! Onde foi parar?? Não recebi até agora!! só recebi a capa carteira e a película.
+
+Salete Siloti",Missing Item,Wrong item,Late or never arrived,1.00
+83d1149212ad8b79fc39230d088ef2dd,falta ser entregue uma cadeira,Missing Item,Wrong item,Late or never arrived,1.00
+8e13d2fc070d5b5cab85f58e307d59d6,"Comprei 2 itens do mesmo produto e tive que pagar 2 fretes... Acho uma sacanagem isso, e também chegou 1 produto e o outro ainda não",Missing Item,Wrong item,Late or never arrived,0.80
+8edd42a7c561e11de943594bfae347e5,"Realizei a compra de 2 colchas de solteiro e só recebi 1 produto.
+E até agora não recebi a outra colcha.",Missing Item,Wrong item,Late or never arrived,1.00
+a6aa6832e27f9328ad3730cf54e494d0,"Gostaria de saber o motivo do NÃO recebimento do produto, visto que fiz uma compra com 4 (quatro) produtos, sendo que três recebi e o controle NÃO.",Missing Item,Wrong item,Late or never arrived,1.00
+b92b5b1122f1298b87bc7882115db417,Não foram entregue as duas capas de couro compradas. Apenas uma delas. Aguardo a devolução do dinheiro ou a entrega da segunda capa.,Missing Item,Wrong item,Late or never arrived,1.00
+d3f6a183fd58d4afd1b44a1bb410d7c2,"bom dia ainda não recebi toa a minha encomenda, pos fiz o pedido de 12 relógios de parede ate agora so chgaram 6",Missing Item,Wrong item,Late or never arrived,1.00
+8491feec182f0f1e300691948ca286aa,A cor e diferente de como está na foto,Wrong Item,Wrong item,Poor quality or not as described,1.00

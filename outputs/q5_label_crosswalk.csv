@@ -1,0 +1,9 @@
+human_label,model_label,note
+Delivery Issue / Not Received,Late or never arrived,
+Missing Item,Wrong item,
+Defective / Broken,Damaged or defective,
+Wrong Item,Wrong item,
+Poor Quality / Fake,Poor quality or not as described,
+Out of Stock / Cancelled,Seller or customer service,Ambiguous; sensitivity maps this to Other.
+Customer Service Issue,Seller or customer service,
+Positive Feedback,Other,Low-score reviews with positive text; no positive label in the model taxonomy.
