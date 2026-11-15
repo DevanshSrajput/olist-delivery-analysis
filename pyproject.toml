@@ -1,0 +1,12 @@
+[project]
+name = "olist-analysis"
+version = "0.1.0"
+description = "DuckDB analysis of the Olist Brazilian e-commerce dataset"
+readme = "PRD.md"
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb>=2.0.0",
+]
+
+[tool.uv]
+package = false

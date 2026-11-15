@@ -1,0 +1,14 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# LLM response cache
+.cache/
+
+# Source data (download separately, see PRD)
+data/
+
+# DuckDB database built by scripts/load_to_duckdb.py
+olist.duckdb
+olist.duckdb.wal
