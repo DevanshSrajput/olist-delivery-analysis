@@ -1,28 +1,86 @@
-# Olist Delivery and Customer Experience Analysis
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1800&color=2A9D8F&center=true&width=900&height=80&lines=DuckDB+%2B+SQL+for+delivery+analytics;Local+LLM+complaint+classification+%28llama3.1%29;Published+Tableau+Public+dashboard" alt="Olist delivery analysis: DuckDB, SQL, local LLM classification, Tableau Public" />
+
+# Olist Delivery &amp; Customer Experience Analysis
+
+[![DuckDB](https://img.shields.io/badge/DuckDB-Analytics-000000?style=for-the-badge&logo=duckdb&logoColor=white)](https://duckdb.org)
+[![SQL](https://img.shields.io/badge/SQL-DuckDB-2A9D8F?style=for-the-badge)](sql/)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](pyproject.toml)
+[![Ollama](https://img.shields.io/badge/LLM-Ollama_llama3.1-2A9D8F?style=for-the-badge&logo=ollama&logoColor=white)](https://ollama.com)
+[![Tableau](https://img.shields.io/badge/Tableau_Public-Dashboard-E44D26?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/devansh.singh5277/viz/olist_delivery_dashboard_17948196428290/Dashboard1?publish=yes)
+[![Open the live dashboard](https://img.shields.io/badge/live_dashboard-Tableau%20Public-D95F4B?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/devansh.singh5277/viz/olist_delivery_dashboard_17948196428290/Dashboard1?publish=yes)
+
+<img src="assets/header.svg" alt="Olist Delivery and Customer Experience: 96,470 delivered orders, 6.77% late, 12.81% low review, 9,234 complaints classified" />
+
+</div>
 
 A DuckDB analysis of the public Olist Brazilian e-commerce dataset. The project measures how delivery performance relates to review scores, late rates by category/state, seller concentration, repeat purchase, and the complaints in low-score review text.
 
 The source of truth is [`PRD.md`](PRD.md). It lives in the repo root; there is no `docs/PRD.md` in this repository.
 
-## Contents
+---
 
-- [Setup](#setup)
-- [Download the data](#download-the-data)
-- [Run the pipeline](#run-the-pipeline)
-- [Q5 review classification](#q5-review-classification)
-- [Q5 agreement](#q5-agreement)
-- [Dashboard](#dashboard)
-- [Limitations](#limitations)
-- [Findings](#findings)
-- [What I got wrong](#what-i-got-wrong)
+## 📊 Quick facts
 
-## Repository layout
+| Metric | Value |
+|---|---:|
+| Delivered orders analysed | 96,470 |
+| Late orders / late rate | 6,534 / 6.77% |
+| Orders with a review score | 95,824 |
+| Low-review orders (score 1-2) | 12,272 (12.81%) |
+| Low-score complaints classified | 9,234 (75.2% of low-score orders) |
+| Q5 agreement on the 100-review sample | 80/100, kappa 0.7335 |
+| Sellers with delivered orders | 2,970 (425 with 50+ orders) |
+
+## 🔍 Research questions
+
+| # | Question | SQL | Headline result |
+|---|---|---|---|
+| Q1 | How does review score change with delay days? | [`q1_review_score_by_delay.sql`](sql/q1_review_score_by_delay.sql) | 8+ days late: 1.70 average score and 79.29% low review, vs 4.29 and 9.22% early |
+| Q2 | Which categories and states have the worst late rate? | [`q2_late_rate_by_category_state.sql`](sql/q2_late_rate_by_category_state.sql) | AL 21.41%, MA 17.43%, SE 15.22%; audio 11.78%, home_comfort 9.44% |
+| Q3 | Do sellers differ in lateness, and how concentrated is the problem? | [`q3_seller_lateness.sql`](sql/q3_seller_lateness.sql) | The worst 43 of 425 sellers drive 15.07% of late orders from qualifying sellers |
+| Q4 | Does a late delivery change the chance of a repeat purchase? | [`q4_repeat_purchase_by_first_lateness.sql`](sql/q4_repeat_purchase_by_first_lateness.sql) | 2.52% repeat after a late first order vs 3.04% after an on-time one (weak, secondary) |
+| Q5 | What do unhappy customers actually complain about? | [`q5_tableau_orders.sql`](sql/q5_tableau_orders.sql) | Late/never arrived 3,461 and wrong item 2,520 of 9,234 classified complaints |
+
+## 📈 Pipeline
+
+```mermaid
+flowchart LR
+    A["Olist CSVs (Kaggle)"] --> B["load_to_duckdb.py"]
+    B --> C[(olist.duckdb)]
+    C --> D["run_quality_checks.py"]
+    C --> E["analysis_orders"]
+    E --> F["Q1-Q4 SQL"]
+    E --> G["Q5 export + llama3.1"]
+    G --> H["tableau_orders_with_complaints.csv"]
+    F --> I["outputs CSV files"]
+    H --> J["Tableau Public dashboard"]
+```
+
+## 📋 Contents
+
+- [Quick facts](#-quick-facts)
+- [Research questions](#-research-questions)
+- [Pipeline](#-pipeline)
+- [Setup](#-setup)
+- [Download the data](#-download-the-data)
+- [Run the pipeline](#-run-the-pipeline)
+- [Q5 review classification](#-q5-review-classification)
+- [Q5 agreement](#-q5-agreement)
+- [Dashboard](#-dashboard)
+- [Limitations](#-limitations)
+- [Findings](#-findings)
+- [What I got wrong](#-what-i-got-wrong)
+
+## 🗂️ Repository layout
 
 ```text
 scripts/                 Python runners
 sql/                     DuckDB SQL for quality checks, analysis tables and questions
 outputs/                 CSV extracts written by the runners
 tableau/                 Published Tableau workbook and dashboard screenshot
+assets/                  README banner and animated dashboard preview
 data/                    Olist CSVs (gitignored)
 labels_human.csv         Hand labels for the 100-review Q5 sample
 labels_model.csv         Model labels for the same 100 reviews
@@ -31,7 +89,7 @@ olist.duckdb             Local DuckDB database (gitignored)
 PRD.md                   Product requirements and analysis definitions
 ```
 
-## Setup
+## ⚙️ Setup
 
 Requirements:
 
@@ -56,7 +114,7 @@ ollama serve
 
 The classifier defaults to `http://localhost:11434` and `llama3.1`. No hosted API key is required.
 
-## Download the data
+## ⬇️ Download the data
 
 The source is the Kaggle dataset **Brazilian E-Commerce Public Dataset by Olist**:
 
@@ -86,7 +144,7 @@ olist_sellers_dataset.csv
 product_category_name_translation.csv
 ```
 
-## Run the pipeline
+## ▶️ Run the pipeline
 
 Run all commands from the repo root.
 
@@ -140,7 +198,7 @@ uv run scripts/run_queries.py --sql sql/q1_review_score_by_delay.sql
 
 Each SQL block starts with `-- OUTPUT: <filename>.csv`.
 
-## Q5 review classification
+## 🤖 Q5 review classification
 
 Q5 uses the 100-review validation sample first, then the full population. The model prompt and cache are versioned; the current prompt version is `q5-v1`.
 
@@ -200,7 +258,7 @@ Q5 uses the 100-review validation sample first, then the full population. The mo
 
    Writes `outputs/tableau_orders_with_complaints.csv`. It has one row per delivered order with the fields from `analysis_orders` plus `complaint_category`. The category comes from the same latest review used for `analysis_orders.review_score`; orders without a labeled low-score review comment have a blank category.
 
-## Q5 agreement
+## 🎯 Q5 agreement
 
 These numbers are from `outputs/q5_agreement_summary.csv` for the 100-review validation sample.
 
@@ -217,17 +275,25 @@ The interpretable comparison is the documented crosswalk in `outputs/q5_label_cr
 
 The agreement is measured only on the 100-review sample. It does not by itself validate the full-population labels. Model confidence is model-reported and is not calibrated.
 
-## Dashboard
+## 📊 Dashboard
 
 The published one-page dashboard is here: [Olist Delivery and Customer Experience](https://public.tableau.com/app/profile/devansh.singh5277/viz/olist_delivery_dashboard_17948196428290/Dashboard1?publish=yes).
 
-[![Olist delivery dashboard](tableau/dashboard.png)](https://public.tableau.com/app/profile/devansh.singh5277/viz/olist_delivery_dashboard_17948196428290/Dashboard1?publish=yes)
+<p align="center">
+  <img src="assets/dashboard.gif" alt="Animated preview of the Olist delivery dashboard" width="900" />
+</p>
+
+<p align="center">
+  <a href="https://public.tableau.com/app/profile/devansh.singh5277/viz/olist_delivery_dashboard_17948196428290/Dashboard1?publish=yes">
+    <img src="tableau/dashboard.png" alt="Olist delivery and customer experience dashboard" width="900" />
+  </a>
+</p>
 
 It has four KPI cards, review score by delay bucket, complaint mix, late rate by state, and late rate by product category. The State filter is interactive. The current published version has a State filter only; the product-category filter from the PRD is a known gap.
 
 The dashboard reads `outputs/tableau_orders_with_complaints.csv` (one row per delivered order). The category chart uses the order-level `category_en`, so its rates can differ slightly from Q2, which uses one row per order-category pair. The screenshot is a Windows capture because the installed Tableau Public version did not expose **Export Image**.
 
-## Limitations
+## ⚠️ Limitations
 
 From `PRD.md` section 4:
 
@@ -239,7 +305,7 @@ From `PRD.md` section 4:
 6. **Old data from one country.** The data covers one country and an older period. Findings are illustrative and do not predict an Indian marketplace.
 7. **Review scores are subjective.** Scores can be affected by factors unrelated to delivery.
 
-## Findings
+## 🔎 Findings
 
 The full one-page write-up is in [`FINDINGS.md`](FINDINGS.md).
 
@@ -249,10 +315,19 @@ The full one-page write-up is in [`FINDINGS.md`](FINDINGS.md).
 
 The repeat-purchase check was weaker: 2.52% of customers whose first order was late placed a second order, versus 3.04% for on-time first orders (`outputs/q4_repeat_purchase_by_first_order_lateness.csv`). It is not one of the three headline findings.
 
-## What I got wrong
+## 🧭 What I got wrong
 
 - The raw Q5 comparison looked like 0/100, but that was a label-scheme mismatch, not a model failure. The interpretable result is 80/100 under the documented crosswalk, and the crosswalk is an assumption.
 - The dashboard category chart uses order-level categories, while Q2 uses one row per order-category pair. Small differences are expected.
 - The published dashboard has only a State filter; the product-category filter is missing.
 - The repeat-purchase result is weak, so I did not make it a headline finding.
 
+---
+
+<div align="center">
+
+**Made with DuckDB, SQL, a local llama3.1 model and Tableau Public.**
+
+[Read the findings](FINDINGS.md) · [Open the live dashboard](https://public.tableau.com/app/profile/devansh.singh5277/viz/olist_delivery_dashboard_17948196428290/Dashboard1?publish=yes) · [Read the PRD](PRD.md)
+
+</div>

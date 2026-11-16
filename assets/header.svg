@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Olist Delivery and Customer Experience Analysis">
+  <title>Olist Delivery and Customer Experience Analysis</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="55%" stop-color="#111C2E"/>
+      <stop offset="100%" stop-color="#1D2F4A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2A9D8F"/>
+      <stop offset="100%" stop-color="#D95F4B"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#2A9D8F" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2A9D8F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#D95F4B" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#D95F4B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <circle cx="140" cy="70" r="260" fill="url(#glow1)"/>
+  <circle cx="1080" cy="360" r="300" fill="url(#glow2)"/>
+
+  <g stroke="#ffffff" stroke-opacity="0.05">
+    <line x1="0" y1="140" x2="1200" y2="140"/>
+    <line x1="0" y1="260" x2="1200" y2="260"/>
+    <line x1="300" y1="0" x2="300" y2="420"/>
+    <line x1="600" y1="0" x2="600" y2="420"/>
+    <line x1="900" y1="0" x2="900" y2="420"/>
+  </g>
+
+  <rect x="60" y="52" width="6" height="58" fill="url(#accent)"/>
+  <text x="86" y="86" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#F8FAFC">
+    Olist Delivery &amp; Customer Experience
+  </text>
+  <text x="86" y="122" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#94A3B8">
+    DuckDB analytics &#183; SQL questions Q1&#8211;Q5 &#183; local LLM complaint classification &#183; Tableau Public dashboard
+  </text>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <g>
+      <rect x="60" y="180" width="255" height="150" rx="16" fill="#0F1B2D" fill-opacity="0.85" stroke="#2A9D8F" stroke-opacity="0.45"/>
+      <text x="187" y="222" text-anchor="middle" font-size="15" fill="#94A3B8">Delivered orders</text>
+      <text x="187" y="278" text-anchor="middle" font-size="42" font-weight="700" fill="#F8FAFC">96,470</text>
+      <text x="187" y="306" text-anchor="middle" font-size="13" fill="#2A9D8F">Brazil &#183; 2016&#8211;2018</text>
+    </g>
+    <g>
+      <rect x="335" y="180" width="255" height="150" rx="16" fill="#0F1B2D" fill-opacity="0.85" stroke="#E9C46A" stroke-opacity="0.45"/>
+      <text x="462" y="222" text-anchor="middle" font-size="15" fill="#94A3B8">Late rate</text>
+      <text x="462" y="278" text-anchor="middle" font-size="42" font-weight="700" fill="#F8FAFC">6.77%</text>
+      <text x="462" y="306" text-anchor="middle" font-size="13" fill="#E9C46A">6,534 late orders</text>
+    </g>
+    <g>
+      <rect x="610" y="180" width="255" height="150" rx="16" fill="#0F1B2D" fill-opacity="0.85" stroke="#D95F4B" stroke-opacity="0.45"/>
+      <text x="737" y="222" text-anchor="middle" font-size="15" fill="#94A3B8">Low-review rate</text>
+      <text x="737" y="278" text-anchor="middle" font-size="42" font-weight="700" fill="#F8FAFC">12.81%</text>
+      <text x="737" y="306" text-anchor="middle" font-size="13" fill="#D95F4B">score 1 or 2</text>
+    </g>
+    <g>
+      <rect x="885" y="180" width="255" height="150" rx="16" fill="#0F1B2D" fill-opacity="0.85" stroke="#5B8DEF" stroke-opacity="0.45"/>
+      <text x="1012" y="222" text-anchor="middle" font-size="15" fill="#94A3B8">Complaints classified</text>
+      <text x="1012" y="278" text-anchor="middle" font-size="42" font-weight="700" fill="#F8FAFC">9,234</text>
+      <text x="1012" y="306" text-anchor="middle" font-size="13" fill="#5B8DEF">6 categories</text>
+    </g>
+  </g>
+
+  <rect x="60" y="356" width="1080" height="4" rx="2" fill="url(#accent)" opacity="0.85"/>
+  <text x="60" y="392" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#64748B">
+    Public dataset &#183; no company data &#183; every number traces to a SQL file in sql/
+  </text>
+</svg>
