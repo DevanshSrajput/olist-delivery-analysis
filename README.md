@@ -11,8 +11,10 @@ The source of truth is [`PRD.md`](PRD.md). It lives in the repo root; there is n
 - [Run the pipeline](#run-the-pipeline)
 - [Q5 review classification](#q5-review-classification)
 - [Q5 agreement](#q5-agreement)
+- [Dashboard](#dashboard)
 - [Limitations](#limitations)
 - [Findings](#findings)
+- [What I got wrong](#what-i-got-wrong)
 
 ## Repository layout
 
@@ -20,9 +22,11 @@ The source of truth is [`PRD.md`](PRD.md). It lives in the repo root; there is n
 scripts/                 Python runners
 sql/                     DuckDB SQL for quality checks, analysis tables and questions
 outputs/                 CSV extracts written by the runners
+tableau/                 Published Tableau workbook and dashboard screenshot
 data/                    Olist CSVs (gitignored)
 labels_human.csv         Hand labels for the 100-review Q5 sample
 labels_model.csv         Model labels for the same 100 reviews
+FINDINGS.md              One-page findings document
 olist.duckdb             Local DuckDB database (gitignored)
 PRD.md                   Product requirements and analysis definitions
 ```
@@ -213,6 +217,16 @@ The interpretable comparison is the documented crosswalk in `outputs/q5_label_cr
 
 The agreement is measured only on the 100-review sample. It does not by itself validate the full-population labels. Model confidence is model-reported and is not calibrated.
 
+## Dashboard
+
+The published one-page dashboard is here: [Olist Delivery and Customer Experience](https://public.tableau.com/app/profile/devansh.singh5277/viz/olist_delivery_dashboard_17948196428290/Dashboard1?publish=yes).
+
+[![Olist delivery dashboard](tableau/dashboard.png)](https://public.tableau.com/app/profile/devansh.singh5277/viz/olist_delivery_dashboard_17948196428290/Dashboard1?publish=yes)
+
+It has four KPI cards, review score by delay bucket, complaint mix, late rate by state, and late rate by product category. The State filter is interactive. The current published version has a State filter only; the product-category filter from the PRD is a known gap.
+
+The dashboard reads `outputs/tableau_orders_with_complaints.csv` (one row per delivered order). The category chart uses the order-level `category_en`, so its rates can differ slightly from Q2, which uses one row per order-category pair. The screenshot is a Windows capture because the installed Tableau Public version did not expose **Export Image**.
+
 ## Limitations
 
 From `PRD.md` section 4:
@@ -226,4 +240,19 @@ From `PRD.md` section 4:
 7. **Review scores are subjective.** Scores can be affected by factors unrelated to delivery.
 
 ## Findings
+
+The full one-page write-up is in [`FINDINGS.md`](FINDINGS.md).
+
+1. **Late delivery tracks much lower satisfaction.** The 8+ days late bucket has a 79.29% low-review share and a 1.70 average score, versus 9.22% and 4.29 for early orders (`outputs/q1_review_score_by_delay.csv`).
+2. **Two complaint types dominate low-score text.** Late/never arrived (3,461) and wrong item (2,520) account for 5,981 of 9,234 categorized complaints (64.8%) (`outputs/tableau_orders_with_complaints.csv`, Q5 labels).
+3. **Late orders concentrate in a small seller group.** The worst 43 of 425 sellers with at least 50 delivered seller-order exposures account for 749 late orders - 15.07% of late orders from qualifying sellers and 11.46% of all late orders (`outputs/q3_seller_concentration.csv`).
+
+The repeat-purchase check was weaker: 2.52% of customers whose first order was late placed a second order, versus 3.04% for on-time first orders (`outputs/q4_repeat_purchase_by_first_order_lateness.csv`). It is not one of the three headline findings.
+
+## What I got wrong
+
+- The raw Q5 comparison looked like 0/100, but that was a label-scheme mismatch, not a model failure. The interpretable result is 80/100 under the documented crosswalk, and the crosswalk is an assumption.
+- The dashboard category chart uses order-level categories, while Q2 uses one row per order-category pair. Small differences are expected.
+- The published dashboard has only a State filter; the product-category filter is missing.
+- The repeat-purchase result is weak, so I did not make it a headline finding.
 
